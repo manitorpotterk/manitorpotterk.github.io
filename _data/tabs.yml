@@ -9,6 +9,16 @@
   name: Home
   icon: "fas fa-home"
 -
+  name: "Machines(Box)"
+  icon: "fas fa-archive"
+  path: tabs
+  url: machine
+-
+  name: "Ctf"
+  icon: "fas fa-archive"
+  path: tabs
+  url: ctf
+-
   name: Categories
   icon: "fas fa-stream"
   path: tabs
@@ -19,17 +29,8 @@
   path: tabs
   url: tags
 -
-  name: "Archives"
-  path: tabs
-  url: archives
-  icon: "fas fa-archive"
--
-  name: "About"
-  icon: "fas fa-archive"
-  path: tabs
-  url: whoami
--
-  name: "Tryhackme"
+  name: "Whaomi"
   icon: "fas fa-info"
   path: tabs
-  url: tryhackme
+  url: whoami
+
