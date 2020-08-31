@@ -27,7 +27,7 @@
   name: "Whoami"
   icon: "fas fa-info"
   path: tabs
-  url: whoami
+  url: about
 -
   name: "Tryhackme"
   icon: "fas fa-info"
