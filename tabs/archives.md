@@ -1,6 +1,6 @@
 ---
 title: Archives
-type: archives
+type: categories
 # The Archives of posts.
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
