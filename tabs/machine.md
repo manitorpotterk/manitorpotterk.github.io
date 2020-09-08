@@ -9,8 +9,8 @@ layout: page
 # MIT License
 ---
 
-{% assign pinned = site.posts | where_exp: "item", "item.pin == true"  %}
-{% assign default = site.posts | where_exp: "item", "item.pin != true"  %}
+{% assign pinned = site.posts | where_exp: "item", "item.categories == CTF"  %}
+{% assign default = site.posts | where_exp: "item", "item.categories != true"  %}
 {% assign posts = "" | split: "" %}
 
 <!-- Get pinned posts -->
@@ -52,10 +52,6 @@ layout: page
   <div class="post-preview">
     <div class="d-flex justify-content-between pr-xl-2">
       <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
-      {% if post.pin == true %}
-        <i class="fas fa-thumbtack fa-fw text-muted mt-1 ml-2 mt-xl-2" data-toggle="tooltip" data-placement="left"
-        title="Pinned"></i>
-      {% endif %}
     </div>
     <div class="post-content">
       <p>
@@ -63,12 +59,10 @@ layout: page
         {{ content | markdownify | strip_html | truncate: 200 }}
       </p>
     </div>
-
     <div class="post-meta text-muted">
       <!-- posted date -->
       <i class="far fa-clock fa-fw"></i>
       {% include timeago.html date=post.date tooltip=true %}
-
       <!-- page views -->
       {% if site.google_analytics.pv.enabled %}
       <i class="far fa-eye fa-fw"></i>
