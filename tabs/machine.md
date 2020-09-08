@@ -9,7 +9,7 @@ layout: page
 # MIT License
 ---
 
-{% assign pinned = site.posts | where_exp: "item", "item.categories == CTF"  %}
+{% assign pinned = site.posts | where_exp: "item", "item.categories == [CTF]"  %}
 {% assign default = site.posts | where_exp: "item", "item.categories != true"  %}
 {% assign posts = "" | split: "" %}
 
