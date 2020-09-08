@@ -5,6 +5,7 @@ date: 2019-08-09 20:55:00 +0800
 categories: [CTF]
 tags: [bash]
 pin: true
+image: /assets/img/sample/devices-mockup.png
 ---
 
 
