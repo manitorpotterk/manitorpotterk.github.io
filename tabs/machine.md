@@ -1,7 +1,7 @@
 ---
 title: Hackthebox
 type: home
-layout: machine
+layout: home
 # The About page
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -9,4 +9,3 @@ layout: machine
 # MIT License
 ---
 
-> **Note**: It will be getting updated soon.
