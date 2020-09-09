@@ -51,6 +51,7 @@ layout: page
 
   <div class="post-preview">
     <div class="d-flex justify-content-between pr-xl-2">
+       <img class="page-image" src={{post.image}} alt="{{page.title}}">
       <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
     </div>
     <div class="post-content">
