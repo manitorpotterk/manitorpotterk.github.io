@@ -54,7 +54,7 @@ layout: page
       <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
     </div>
   <div class="page-cover-image">
-        <img class="page-image" src={{ "https://manitorpotterk.github.io"| append post.image }} alt="{{page.title}}">
+        <img class="page-image" src={{ "https://manitorpotterk.github.io" | append : post.image }} alt="{{page.title}}">
     </div>
     <div class="post-content">
       <p>
