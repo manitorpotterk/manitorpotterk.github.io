@@ -3,8 +3,8 @@ type: page
 layout: page
 breadcrumb:
   -
-    label: CTFF
-    
+    label: CTF
+   
 # Index page
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -12,7 +12,7 @@ breadcrumb:
 # MIT License
 ---
 
-{% assign pinned = site.posts | where_exp: "item", "item.new == true"  %}
+{% assign pinned = site.posts | where_exp: "item", "item.new == box"  %}
 {% assign default = site.posts | where_exp: "item", "item.new != true"  %}
 {% assign posts = "" | split: "" %}
 
@@ -65,12 +65,10 @@ breadcrumb:
         {{ content | markdownify | strip_html | truncate: 200 }}
       </p>
     </div>
-
     <div class="post-meta text-muted">
       <!-- posted date -->
       <i class="far fa-clock fa-fw"></i>
       {% include timeago.html date=post.date tooltip=true %}
-
       <!-- page views -->
       {% if site.google_analytics.pv.enabled %}
       <i class="far fa-eye fa-fw"></i>
