@@ -1,7 +1,9 @@
 ---
-title: Machine
 type: page
 layout: page
+breadcrumb:
+  -
+    label: MACHINE
 # The About page
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -54,7 +56,7 @@ layout: page
       <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
     </div>
   <div class="page-cover-image">
-        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{page.title}}" width="500" height="600">
+        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{page.title}}" width="500" height="500">
     </div>
     <div class="post-content">
       <p>
