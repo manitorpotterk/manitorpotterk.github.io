@@ -5,7 +5,7 @@ date: 2019-08-11 00:34:00 +0800
 categories: [CTF]
 tags: [open]
 toc: false
-role: bugbounty
+role_b: bugbounty
 image: /assets/img/sample/devices-mockup.png
 ---
 
