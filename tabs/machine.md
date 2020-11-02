@@ -55,6 +55,7 @@ layout: page
     </div>
   <div class="page-cover-image">
         <img class="page-image" src={{ "https://manitorpotterk.github.io" | append : post.image }} alt="{{page.title}}">
+        <img src="https://manitorpotterk.github.io/assets/img/sample/devices-mockup.png" alt="text that you wants to add" width="500" height="600">
     </div>
     <div class="post-content">
       <p>
