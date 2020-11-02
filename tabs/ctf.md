@@ -3,7 +3,7 @@ type: page
 layout: page
 breadcrumb:
   -
-    label: CTF
+    label: CTFF
    
 # Index page
 # v2.0
