@@ -11,8 +11,8 @@ breadcrumb:
 # MIT License
 ---
 
-{% assign pinned = site.posts | where_exp: "item", "item.role != machine"  %}
-{% assign default = site.posts | where_exp: "item", "item.role == machine"  %}
+{% assign pinned = site.posts | where_exp: "item", "item.role_m != machine"  %}
+{% assign default = site.posts | where_exp: "item", "item.role_m == machine"  %}
 {% assign posts = "" | split: "" %}
 
 <!-- Get pinned posts -->
