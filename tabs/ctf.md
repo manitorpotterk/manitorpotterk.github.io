@@ -12,7 +12,7 @@ breadcrumb:
 # MIT License
 ---
 
-{% assign pinned = site.posts | where_exp: "item", "item.new == box"  %}
+{% assign pinned = site.posts | where_exp: "item", "item.new == true"  %}
 {% assign default = site.posts | where_exp: "item", "item.new != true"  %}
 {% assign posts = "" | split: "" %}
 
