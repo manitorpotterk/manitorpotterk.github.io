@@ -19,6 +19,9 @@
     
   .page-cover-image {
     text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
       }
 
     h1 {
