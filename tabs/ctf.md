@@ -3,7 +3,7 @@ type: page
 layout: page
 breadcrumb:
   -
-    label: CTFF
+    label: Bug Bounty
    
 # Index page
 # v2.0
@@ -12,8 +12,8 @@ breadcrumb:
 # MIT License
 ---
 
-{% assign pinned = site.posts | where_exp: "item", "item.new != box"  %}
-{% assign default = site.posts | where_exp: "item", "item.new == box"  %}
+{% assign pinned = site.posts | where_exp: "item", "item.new != bugbounty"  %}
+{% assign default = site.posts | where_exp: "item", "item.new == bugbounty"  %}
 {% assign posts = "" | split: "" %}
 
 <!-- Get pinned posts -->
