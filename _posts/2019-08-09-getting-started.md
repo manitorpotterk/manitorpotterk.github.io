@@ -5,7 +5,7 @@ date: 2019-08-09 20:55:00 +0800
 categories: [CTF]
 tags: [bash]
 pin: true
-new: bugbounty
+role: bugbounty
 image: /assets/img/sample/devices-mockup.png
 ---
 
