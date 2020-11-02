@@ -4,7 +4,7 @@ author: Cotes Chung
 date: 2019-08-08 14:10:00 +0800
 categories: [Hackthebox, Easy]
 tags: [xss]
-role: machine
+role_m: machine
 image: /assets/img/sample/devices-mockup.png
 ---
 
