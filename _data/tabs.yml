@@ -14,10 +14,10 @@
   path: tabs
   url: machine
 -
-  name: "Ctf"
+  name: "Bug Bounty"
   icon: "fas fa-archive"
   path: tabs
-  url: ctf
+  url: bugbounty
 -
   name: Categories
   icon: "fas fa-stream"
