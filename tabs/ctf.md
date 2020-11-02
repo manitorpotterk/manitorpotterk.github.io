@@ -58,9 +58,9 @@ breadcrumb:
         <i class="fas fa-thumbtack fa-fw text-muted mt-1 ml-2 mt-xl-2" data-toggle="tooltip" data-placement="left"
         title="Pinned"></i>
       {% endif %}
-      <div class="page-cover-image">
-        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{page.title}}" width="500" height="500">
     </div>
+  <div class="page-cover-image">
+        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{page.title}}" width="500" height="500">
     </div>
     <div class="post-content">
       <p>
