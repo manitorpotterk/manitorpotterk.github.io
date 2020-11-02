@@ -54,7 +54,7 @@ breadcrumb:
   <div class="post-preview">
     <div class="d-flex justify-content-between pr-xl-2">
       <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
-      {% if post.pin == true %}
+      {% if post.math == true %}
         <i class="fas fa-thumbtack fa-fw text-muted mt-1 ml-2 mt-xl-2" data-toggle="tooltip" data-placement="left"
         title="Pinned"></i>
       {% endif %}
