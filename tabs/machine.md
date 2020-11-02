@@ -54,8 +54,7 @@ layout: page
       <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
     </div>
   <div class="page-cover-image">
-        <img class="page-image" src="https://manitorpotterk.github.io/assets/img/sample/devices-mockup.png" alt="{{page.title}}">
-        <img src={{ https://manitorpotterk.github.io | append : post.image }} alt="text that you wants to add" width="500" height="600">
+        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{page.title}}" width="500" height="600">
     </div>
     <div class="post-content">
       <p>
