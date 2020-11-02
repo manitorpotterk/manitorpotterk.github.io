@@ -56,9 +56,10 @@ layout: page
         title="Pinned"></i>
       {% endif %}
     </div>
-    <div class="page-cover-image">
-        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{page.title}}" width="500" height="500">
-    </div>
+    <figure class="post-thumbnail image-card width-wide">
+        <a href="{{ post.url | relative_url }}"><img src=""{{ "https://manitorpotterk.github.io" | append : post.image }}""
+            alt="{{ post.title }}"></a>
+     </figure>
     <div class="post-content">
       <p>
         {% include no-linenos.html content=post.content %}
