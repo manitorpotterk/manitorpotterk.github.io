@@ -5,7 +5,7 @@ date: 2019-08-08 11:33:00 +0800
 categories: [Hackthebox, Easy]
 tags: [lfi]
 math: true
-role_m: machine
+role_b: bugbounty
 image: /assets/img/sample/devices-mockup.png
 ---
 
