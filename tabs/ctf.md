@@ -3,7 +3,7 @@ type: page
 layout: page
 breadcrumb:
   -
-    label: CTFF
+    label: CTF
    
 # Index page
 # v2.0
@@ -12,7 +12,7 @@ breadcrumb:
 # MIT License
 ---
 
-{% assign pinned = site.posts | where_exp: "item", "item.new == true"  %}
+{% assign pinned = site.posts | where_exp: "item", "item.new == box"  %}
 {% assign default = site.posts | where_exp: "item", "item.new != true"  %}
 {% assign posts = "" | split: "" %}
 
@@ -57,7 +57,7 @@ breadcrumb:
       <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
     </div>
   <div class="page-cover-image">
-        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{page.title}}" width="500" height="500">
+        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{post.title}}" width="500" height="500">
     </div>
     <div class="post-content">
       <p>
