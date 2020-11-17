@@ -2,7 +2,7 @@
 layout: page
 breadcrumb:
   -
-    label: Bug Bount
+    label: Bug Bounty
    
 # Index page
 # v2.0
