@@ -60,7 +60,7 @@ breadcrumb:
       {% endif %}
     </div>
   <div class="page-cover-image">
-        <a class="post-thumbnail" style="background-image: url({{ "https://manitorpotterk.github.io" | append : post.image}})" href="{{post.url | prepend: site.baseurl}}"></a>
+        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{post.title}}" width="500" height="500">
     </div>
     <div class="post-content">
       <p>
