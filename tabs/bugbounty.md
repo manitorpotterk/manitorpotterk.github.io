@@ -2,7 +2,7 @@
 layout: page
 breadcrumb:
   -
-    label: Bug Bounty
+    label: Bug Bount
    
 # Index page
 # v2.0
@@ -60,7 +60,7 @@ breadcrumb:
       {% endif %}
     </div>
   <div class="page-cover-image">
-        <img src="{{ "https://manitorpotterk.github.io" | append : post.image }}" alt="{{post.title}}" width="500" height="500">
+        <a class="post-thumbnail" style="background-image: url({{ "https://manitorpotterk.github.io" | append : post.image}})" href="{{post.url | prepend: site.baseurl}}"></a>
     </div>
     <div class="post-content">
       <p>
