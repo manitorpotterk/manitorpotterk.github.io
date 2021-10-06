@@ -1,1 +1,48 @@
 <a href=https://www.vidio.com/users/password/new?email=testing1overtake@gmail.com > test this </a>
+
+var page = require('webpage').create();
+
+page.onConsoleMessage = function (msg) {
+    console.log('From Page Console: '+msg);
+};
+
+page.onInitialized = function() {
+	page.evaluate(function () {
+		"use strict";
+		//The Referrer we want to set
+		var myReferrer = 'http://referrer.example.com';
+		
+		function showInfo(){
+			console.log("window.document.referrer is: '" + window.document.referrer + "' of type: '" + typeof window.document.referrer+"'");
+		};
+		
+
+		//Before
+		console.log("Status Quo");
+		showInfo();
+
+		// Trying to delete the property
+		console.log("Deleting document.referrer");
+		delete window.document.referrer;
+		showInfo();
+
+		// Manually setting the referrer
+		console.log('Manual overwrite')
+		window.document.referrer = myReferrer;
+		showInfo();
+
+		// defining a getter method
+		console.log('testing defineGetter');
+		window.document.__defineGetter__('referrer', function () {
+			return myReferrer;
+		});
+		showInfo();
+	});
+
+}
+
+page.onLoadFinished = function (status) {
+exit();
+};
+
+page.open('https://www.vidio.com/users/password/new?email=testing1overtake@gmail.com');
