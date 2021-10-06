@@ -1,26 +1,8 @@
 <a href=https://www.vidio.com/users/password/new?email=testing1overtake@gmail.com > test this </a>
 
 <script>
-chrome.webRequest.onBeforeSendHeaders.addEventListener(function(details){
-    var newRef = "http://new-referer/path";
-    var hasRef = false;
-    for(var n in details.requestHeaders){
-        hasRef = details.requestHeaders[n].name == "Referer";
-        if(hasRef){
-            details.requestHeaders[n].value = newRef;
-         break;
-        }
-    }
-    if(!hasRef){
-        details.requestHeaders.push({name:"Referer",value:newRef});
-    }
-    return {requestHeaders:details.requestHeaders};
-},
-{
-    urls:["https://www.vidio.com/users/login"]
-},
-[
-    "requestHeaders",
-    "blocking"
-]);
+delete window.document.referrer;
+        window.document.__defineGetter__('referrer', function () {
+            return "yoururl.com";
+        });
 </script>	
