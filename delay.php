@@ -1,3 +1,1 @@
-<?php
-sleep(60);
-?>
+<?php header('location:http://'.$_REQUEST['url']); ?>
